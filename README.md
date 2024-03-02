@@ -1,4 +1,4 @@
-#SocialNetworkGUI
+# SocialNetworkGUI
 
 Emulator of a Social Network application using Java, JavaFX and relational database such as PostGreSQL
 
