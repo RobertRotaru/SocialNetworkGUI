@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="309.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubbcluj.map.socialnetworkgui.controlers.SignUpController">
+   <children>
+      <TextField fx:id="usernameFld" layoutX="225.0" layoutY="120.0" />
+      <TextField fx:id="passFld" layoutX="225.0" layoutY="172.0" />
+      <Label layoutX="108.0" layoutY="120.0" text="Enter username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="172.0" text="Enter password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="189.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleSignUp" text="Sign up" />
+      <TextField fx:id="nameFld" layoutX="225.0" layoutY="73.0" />
+      <Label layoutX="136.0" layoutY="73.0" text="Enter name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

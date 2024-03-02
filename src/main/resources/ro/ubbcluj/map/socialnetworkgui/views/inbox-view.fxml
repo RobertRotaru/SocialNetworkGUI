@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubbcluj.map.socialnetworkgui.InboxController">
+   <children>
+      <ListView fx:id="usersList" layoutY="29.0" prefHeight="371.0" prefWidth="199.0" />
+      <ListView fx:id="messagesList" layoutX="199.0" layoutY="29.0" prefHeight="313.0" prefWidth="401.0" />
+      <HBox layoutX="210.0" layoutY="349.0" prefHeight="42.0" prefWidth="374.0">
+         <children>
+            <TextField fx:id="messageFld" prefHeight="31.0" prefWidth="296.0">
+               <font>
+                  <Font name="Candara" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="4.5" />
+               </HBox.margin></TextField>
+            <Button fx:id="sendBttn" mnemonicParsing="false" onAction="#handleSendMessage" text="Send">
+               <HBox.margin>
+                  <Insets left="25.0" top="8.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+      <Label fx:id="userLabel" layoutX="226.0" layoutY="-9.0" prefHeight="42.0" prefWidth="363.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="newConvo" fitHeight="25.0" fitWidth="27.0" layoutX="165.0" layoutY="2.0" onMouseClicked="#handleNewConvo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/newChat.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="197.0" layoutY="2.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="5.0" />
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="130.0" layoutY="2.0" onMouseClicked="#handleNewGroup" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/newGroupChat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="565.0" layoutY="5.0" onMouseClicked="#showInfo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/info.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

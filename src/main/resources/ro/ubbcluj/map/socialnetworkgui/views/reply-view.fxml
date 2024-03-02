@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="192.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubbcluj.map.socialnetworkgui.controlers.ReplyController">
+   <children>
+      <VBox layoutX="30.0" layoutY="4.0" prefHeight="182.0" prefWidth="258.0">
+         <children>
+            <Label text="Enter your reply">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="61.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="98.0" prefWidth="258.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="txtFld">
+                     <HBox.margin>
+                        <Insets left="10.0" top="36.5" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="sendBttn" mnemonicParsing="false" onAction="#sendReply" text="Send">
+                     <HBox.margin>
+                        <Insets left="30.0" top="36.5" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

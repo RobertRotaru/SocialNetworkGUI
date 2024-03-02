@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ro.ubbcluj.map.socialnetworkgui.controlers.ProfileController">
+   <children>
+      <TabPane prefHeight="430.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" fx:id="profileTab">
+        <tabs>
+          <Tab text="Inbox" fx:id="inboxTab">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <fx:include fx:id="inbox" source="inbox-view.fxml"/>
+            </content>
+          </Tab>
+          <Tab text="Requests" fx:id="requestsTab">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <fx:include fx:id="requests" source="requests-view.fxml"/>
+            </content>
+          </Tab>
+            <Tab text="Discover" fx:id="discoverTab">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <fx:include fx:id="discover" source="possible-friends-view.fxml"/>
+                </content>
+            </Tab>
+            <Tab text="Profile" fx:id="profileInfoTab">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <fx:include fx:id="profileInfo" source="profile-info-view.fxml"/>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

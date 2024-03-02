@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="242.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubbcluj.map.socialnetworkgui.LoginWindow">
+   <children>
+      <Label layoutX="92.0" layoutY="44.0" text="Enter your credentials">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameFld" layoutX="167.0" layoutY="100.0" />
+      <Label layoutX="78.0" layoutY="104.0" text="Username">
+         <font>
+            <Font name="Candara" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passFld" layoutX="167.0" layoutY="144.0" />
+      <Label layoutX="80.0" layoutY="148.0" text="Password">
+         <font>
+            <Font name="Candara" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBttn" layoutX="162.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+      <Button layoutX="157.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleSignUp" text="Sign up" />
+   </children>
+</AnchorPane>

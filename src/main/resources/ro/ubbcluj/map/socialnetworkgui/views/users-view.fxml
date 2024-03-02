@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="usersview" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.ubbcluj.map.socialnetworkgui.MainWindow">
+   <children>
+      <TableView fx:id="usersTable" layoutX="1.0" layoutY="-1.0" prefHeight="233.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="150.0" text="ID User" />
+            <TableColumn fx:id="surnameColumn" prefWidth="150.0" text="Surname" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="150.0" text="First Name" />
+            <TableColumn fx:id="checkboxColumn" prefWidth="150.0" text="Select to delete" />
+        </columns>
+      </TableView>
+      <VBox layoutX="159.0" layoutY="274.0" prefHeight="122.0" prefWidth="300.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Surname">
+                     <HBox.margin>
+                        <Insets left="75.0" top="6.5" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="surnameTxtFld" prefHeight="14.0" prefWidth="149.0" promptText="Popescu">
+                     <HBox.margin>
+                        <Insets left="10.0" top="2.5" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="First Name">
+                     <HBox.margin>
+                        <Insets left="64.0" top="6.5" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="firstNameTxtFld" promptText="Ion">
+                     <HBox.margin>
+                        <Insets left="10.0" top="2.5" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addUserBttn" mnemonicParsing="false" onAction="#handleSave" text="Add" textAlignment="CENTER">
+                     <font>
+                        <Font name="Candara" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="70.0" top="3.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="updateBttn" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="24.0" text="Update">
+                     <HBox.margin>
+                        <Insets left="20.0" top="3.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Candara" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteBttn" mnemonicParsing="false" onAction="#handleDelete" prefHeight="24.0" text="Delete">
+                     <HBox.margin>
+                        <Insets left="20.0" top="3.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Candara" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="201.0" layoutY="239.0" prefHeight="29.0" prefWidth="218.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="37.0" text="Page">
+               <font>
+                  <Font name="Candara" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" top="4.5" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" prefHeight="25.0" prefWidth="48.0">
+               <HBox.margin>
+                  <Insets left="5.0" top="2.5" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children>
+      </HBox>
+      <Label layoutX="486.0" layoutY="239.0" text="Page size" />
+      <TextField fx:id="pageSizeFld" layoutX="545.0" layoutY="235.0" prefHeight="17.0" prefWidth="29.0" />
+   </children>
+</AnchorPane>

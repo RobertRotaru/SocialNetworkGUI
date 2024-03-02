@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ro.ubbcluj.map.socialnetworkgui.controlers.FriendsController">
+   <children>
+      <ListView fx:id="listView" layoutX="-2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="338.0" />
+   </children>
+</AnchorPane>
